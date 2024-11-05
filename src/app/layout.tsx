@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Alignify",
   description:
     "Website that helps to manage the project's timelines effectively",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
