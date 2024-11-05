@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { DottedSeparator } from "./dotted-separator";
 import { Navigation } from "./navigation";
+import { WorkspaceSwitcher } from "./workspace-switcher";
 
 export const Sidebar = () => {
   return (
@@ -10,6 +11,8 @@ export const Sidebar = () => {
         <Image src="/logo.png" alt="Logo" width={45} height={45} />
         <p className="text-3xl font-bold">Alignify</p>
       </Link>
+      <DottedSeparator className="my-5" />
+      <WorkspaceSwitcher />
       <DottedSeparator className="my-5" />
       <Navigation />
     </aside>
