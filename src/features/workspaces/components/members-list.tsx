@@ -3,7 +3,7 @@ import { DottedSeparator } from "@/components/dotted-separator";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { useWorkspaceId } from "@/features/hooks/use-workspace-id";
+import { useWorkspaceId } from "@/features/workspaces/hooks/use-workspace-id";
 import { useGetMembers } from "@/features/members/api/use-get-members";
 import { MemberAvatar } from "@/features/members/components/member-avatar";
 import { ArrowLeftIcon, MoreVerticalIcon } from "lucide-react";

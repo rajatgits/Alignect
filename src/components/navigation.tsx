@@ -9,7 +9,7 @@ import {
   GoHome,
   GoHomeFill,
 } from "react-icons/go";
-import { useWorkspaceId } from "@/features/hooks/use-workspace-id";
+import { useWorkspaceId } from "@/features/workspaces/hooks/use-workspace-id";
 
 import { usePathname } from "next/navigation";
 

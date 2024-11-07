@@ -11,8 +11,8 @@ import {
 } from "@/components/ui/card";
 import Link from "next/link";
 import { useJoinWorkspace } from "../api/use-join-workspace";
-import { useInviteCode } from "@/features/hooks/use-invite-code";
-import { useWorkspaceId } from "@/features/hooks/use-workspace-id";
+import { useInviteCode } from "@/features/workspaces/hooks/use-invite-code";
+import { useWorkspaceId } from "@/features/workspaces/hooks/use-workspace-id";
 import { useRouter } from "next/navigation";
 
 interface JoinWorkspaceFormProps {
