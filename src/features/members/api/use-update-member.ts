@@ -1,6 +1,5 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { InferRequestType, InferResponseType } from "hono";
-
 import { client } from "@/lib/rpc";
 import { toast } from "sonner";
 
@@ -28,7 +27,7 @@ export const useUpdateMember = () => {
 
       return await response.json();
     },
-    onSuccess: ({ data }) => {
+    onSuccess: () => {
       toast.success("Member updated");
       queryClient.invalidateQueries({ queryKey: ["members"] });
     },

@@ -27,7 +27,6 @@ import { cn } from "@/lib/utils";
 import { Project } from "../types";
 import { ArrowLeftIcon } from "lucide-react";
 import { useConfirm } from "@/hooks/use-confirm";
-import { toast } from "sonner";
 import { useUpdateProject } from "../api/use-update-project";
 import { useDeleteProject } from "../api/use-delete-project";
 
@@ -68,14 +67,7 @@ export const EditProjectForm = ({
       image: values.image instanceof File ? values.image : "",
     };
 
-    mutate(
-      { form: finalValues, param: { projectId: initialValues.$id } },
-      {
-        onSuccess: () => {
-          form.reset();
-        },
-      }
-    );
+    mutate({ form: finalValues, param: { projectId: initialValues.$id } });
   };
 
   const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -259,7 +251,7 @@ export const EditProjectForm = ({
               size="sm"
               variant="destructive"
               type="button"
-              disabled={isPending}
+              disabled={isDeletingProject}
               onClick={handleDelete}
             >
               Delete Project

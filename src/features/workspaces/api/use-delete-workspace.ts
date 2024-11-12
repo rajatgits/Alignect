@@ -6,7 +6,7 @@ import { toast } from "sonner";
 
 type ResponseType = InferResponseType<
   (typeof client.api.workspaces)[":workspaceId"]["$delete"],
-  201
+  200
 >;
 type RequestType = InferRequestType<
   (typeof client.api.workspaces)[":workspaceId"]["$delete"]

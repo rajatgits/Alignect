@@ -16,9 +16,11 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form";
+
 import Link from "next/link";
 import { loginSchema } from "../schemas";
 import { useLogin } from "../api/use-login";
+import { signUpWithGithub, signUpwithGoogle } from "@/lib/oauth";
 
 export const SignInCard = () => {
   const { mutate, isPending } = useLogin();
@@ -78,7 +80,6 @@ export const SignInCard = () => {
                 </FormItem>
               )}
             />
-
             <Button disabled={isPending} size="lg" className="w-full">
               Login
             </Button>
@@ -94,11 +95,13 @@ export const SignInCard = () => {
           variant="secondary"
           size="lg"
           className="w-full"
+          onClick={() => signUpwithGoogle()}
         >
           <FcGoogle className="mr-2 size-5" />
           Google
         </Button>
         <Button
+          onClick={() => signUpWithGithub()}
           disabled={isPending}
           variant="secondary"
           size="lg"
