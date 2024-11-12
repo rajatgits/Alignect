@@ -10,7 +10,7 @@ export const Sidebar = () => {
     <aside className="h-full bg-neutral-100 p-5 w-full">
       <Link href="/" className=" space-x-2 flex items-center justify-center">
         <Image src="/logo.png" alt="Logo" width={45} height={45} />
-        <p className="text-3xl font-bold">Alignify</p>
+        <p className="text-3xl font-bold">Alignect</p>
       </Link>
       <DottedSeparator className="my-5" />
       <WorkspaceSwitcher />
