@@ -13,7 +13,7 @@ const StandaloneLayout = ({ children }: StandaloneLayoutProps) => {
         <nav className="flex justify-between items-center h-[73px]">
           <Link href="/" className="flex items-center justify-center space-x-2">
             <Image src="/logo.png" alt="Logo" height={45} width={45} />
-            <p className="text-3xl font-bold">Alignify</p>
+            <p className="text-3xl font-bold">Alignect</p>
           </Link>
           <UserButton />
         </nav>

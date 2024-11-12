@@ -10,7 +10,7 @@ import { Toaster } from "@/components/ui/sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Alignify",
+  title: "Alignect",
   description:
     "Website that helps to manage the project's timelines effectively",
   icons: {
